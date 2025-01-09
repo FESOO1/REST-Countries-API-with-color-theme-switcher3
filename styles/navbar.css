@@ -103,6 +103,35 @@
     color: black;
 }
 
+/* BODY JS - HOME PAGE */
+
+.body-js .main-top-search {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.body-js .main-top-search-input {
+    color: black;
+}
+
+.body-js .main-top-search-svg {
+    fill: black;
+}
+
+.body-js .country-itself {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.body-js .country-itself-image {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.body-js .country-itself-information-name,
+.body-js .country-itself-information-inner-text {
+    color: black;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 650px) {
