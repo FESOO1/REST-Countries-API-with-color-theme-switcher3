@@ -6,6 +6,8 @@ async function displayCountriesData() {
     const respose = await fetch('../data.json');
     const countriesData = await respose.json();
 
+    console.log(countriesData[0].languages);
+
     for (let i = 0; i < 10; i++) {
         countriesThemselves.innerHTML += `
             <a href="./pages/country-data.html" class="country-itself">
@@ -39,6 +41,7 @@ async function displayCountriesData() {
             localStorage.setItem('countryTopLevelDomainLS', countriesData[0].topLevelDomain[0]);
             localStorage.setItem('countryCurrenciesLS', countriesData[0].currencies[0].name);
             localStorage.setItem('countryBorderCountriesLS', JSON.stringify(countriesData[0].borders));
+            localStorage.setItem('countryLanguagesLS', JSON.stringify(countriesData[0].languages));
         });
     };
 };
