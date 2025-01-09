@@ -22,8 +22,6 @@ function displayCountryData() {
     const countryCapitalLS = localStorage.getItem('countryCapitalLS');
     const countryTopLevelDomainLS = localStorage.getItem('countryTopLevelDomainLS');
     const countryCurrenciesLS = localStorage.getItem('countryCurrenciesLS');
-    /* const countryBorderCountriesLS = JSON.parse(localStorage.getItem('countryBorderCountriesLS'));
-    const countryLanguagesLS = JSON.parse(localStorage.getItem('countryLanguagesLS')); */
 
     if (countryFlagLS) {
         title.textContent = `${countryNameLS}'s Data.`;
