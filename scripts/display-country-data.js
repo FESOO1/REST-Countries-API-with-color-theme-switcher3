@@ -1,3 +1,4 @@
+const title = document.querySelector('title');
 const countryImage = document.querySelector('.country-data-left-image');
 const countryName = document.querySelector('.country-data-right-name');
 const countryNativeName = document.querySelector('.country-data-right-grid-native-name');
@@ -25,6 +26,7 @@ function displayCountryData() {
     const countryLanguagesLS = JSON.parse(localStorage.getItem('countryLanguagesLS')); */
 
     if (countryFlagLS) {
+        title.textContent = `${countryNameLS}'s Data.`;
         countryImage.src = countryFlagLS;
         countryName.textContent = countryNameLS;
         countryNativeName.textContent = countryNativeNameLS;

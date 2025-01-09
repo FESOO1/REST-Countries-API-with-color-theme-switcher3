@@ -151,6 +151,20 @@
     background-color: rgb(253, 253, 253);
 }
 
+.body-js .country-data-left {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.body-js .country-data-left-image {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.body-js .country-data-right-name,
+.body-js .country-data-right-grid-text {
+    color: black;
+}
+
 
 /* MEDIA QUERIES */
 
