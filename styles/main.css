@@ -75,6 +75,7 @@ main {
 /* COUNTRY ITSELF */
 
 .country-itself {
+    height: max-content;
     background-color: hsl(209, 23%, 22%);
     border-radius: 0.5rem;
     overflow: hidden;

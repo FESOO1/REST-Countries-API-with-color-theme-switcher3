@@ -6,7 +6,7 @@ async function displayCountriesData() {
     const respose = await fetch('../data.json');
     const countriesData = await respose.json();
 
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 250; i++) {
         countriesThemselves.innerHTML += `
             <a href="./pages/country-data.html" class="country-itself">
                 <div class="country-itself-image">
