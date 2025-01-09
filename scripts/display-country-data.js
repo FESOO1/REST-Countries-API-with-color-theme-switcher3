@@ -34,13 +34,11 @@ function displayCountryData() {
         countryCapital.textContent = countryCapitalLS;
         countryTopLevelDomain.textContent = countryTopLevelDomainLS;
         countryCurrencies.textContent = countryCurrenciesLS;
-
-        /* for (let i = 0; i < countryLanguagesLS.length; i++); {
-            countryLanguages.textContent = countryLanguagesLS[i].name;
-        }; */
+        
+        for (let i = 0; i < countryLanguagesLS.length; i++); {
+            countryLanguages.textContent = `${countryLanguagesLS[0].name}, ${countryLanguagesLS[1].name}, ${countryLanguagesLS[2].name}`;
+        };
     };
-
-    console.log(countryLanguagesLS[0].name);
 };
 
 displayCountryData();
