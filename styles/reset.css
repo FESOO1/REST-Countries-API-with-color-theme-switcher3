@@ -49,6 +49,8 @@ body {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 0.2rem;
 }
 
 .navbar-theme-button-svg {
@@ -68,7 +70,23 @@ body {
     font-weight: 600;
 }
 
+.navbar-theme-button:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.navbar-theme-button:active {
+    background-color: rgba(255,255,255,0.03);
+}
+
 /* NAVBAR THEME BUTTON JS */
+
+.navbar-theme-button-js:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-theme-button-js:active {
+    background-color: rgba(0, 0, 0, 0.03);
+}
 
 .navbar-theme-button-js .navbar-theme-button-svg {
     display: none;
