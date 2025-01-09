@@ -102,3 +102,24 @@
 .body-js .navbar-logo {
     color: black;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 650px) {
+    .navbar {
+        padding-inline: 40px;
+    }
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        padding-inline: 20px;
+        column-gap: 20px;
+    }
+    .navbar-logo {
+        font-size: 1rem;
+    }
+}
