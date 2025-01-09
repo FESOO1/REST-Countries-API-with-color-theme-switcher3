@@ -33,15 +33,15 @@ async function displayCountriesData() {
         countryItself[i].addEventListener('click', () => {
             localStorage.setItem('countryFlagLS', countriesData[i].flags.svg);
             localStorage.setItem('countryNameLS', countriesData[i].name);
-            localStorage.setItem('countryNativeNameLS', countriesData[0].nativeName);
-            localStorage.setItem('countryPopulationLS', countriesData[0].population);
-            localStorage.setItem('countryRegionLS', countriesData[0].region);
-            localStorage.setItem('countrySubregionLS', countriesData[0].subregion);
-            localStorage.setItem('countryCapitalLS', countriesData[0].capital);
-            localStorage.setItem('countryTopLevelDomainLS', countriesData[0].topLevelDomain[0]);
-            localStorage.setItem('countryCurrenciesLS', countriesData[0].currencies[0].symbol);
-            localStorage.setItem('countryLanguagesLS', JSON.stringify(countriesData[0].languages));
-            localStorage.setItem('countryBorderCountriesLS', JSON.stringify(countriesData[0].borders));
+            localStorage.setItem('countryNativeNameLS', countriesData[i].nativeName);
+            localStorage.setItem('countryPopulationLS', countriesData[i].population);
+            localStorage.setItem('countryRegionLS', countriesData[i].region);
+            localStorage.setItem('countrySubregionLS', countriesData[i].subregion);
+            localStorage.setItem('countryCapitalLS', countriesData[i].capital);
+            localStorage.setItem('countryTopLevelDomainLS', countriesData[i].topLevelDomain[0]);
+            localStorage.setItem('countryCurrenciesLS', countriesData[i].currencies[0].symbol);
+            /* localStorage.setItem('countryBorderCountriesLS', JSON.stringify(countriesData[i].borders));
+            localStorage.setItem('countryLanguagesLS', JSON.stringify(countriesData[i].languages)); */
         });
     };
 };

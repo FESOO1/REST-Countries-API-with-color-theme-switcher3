@@ -21,8 +21,8 @@ function displayCountryData() {
     const countryCapitalLS = localStorage.getItem('countryCapitalLS');
     const countryTopLevelDomainLS = localStorage.getItem('countryTopLevelDomainLS');
     const countryCurrenciesLS = localStorage.getItem('countryCurrenciesLS');
-    const countryBorderCountriesLS = JSON.parse(localStorage.getItem('countryBorderCountriesLS'));
-    const countryLanguagesLS = JSON.parse(localStorage.getItem('countryLanguagesLS'));
+    /* const countryBorderCountriesLS = JSON.parse(localStorage.getItem('countryBorderCountriesLS'));
+    const countryLanguagesLS = JSON.parse(localStorage.getItem('countryLanguagesLS')); */
 
     if (countryFlagLS) {
         countryImage.src = countryFlagLS;
@@ -34,10 +34,6 @@ function displayCountryData() {
         countryCapital.textContent = countryCapitalLS;
         countryTopLevelDomain.textContent = countryTopLevelDomainLS;
         countryCurrencies.textContent = countryCurrenciesLS;
-        
-        for (let i = 0; i < countryLanguagesLS.length; i++); {
-            countryLanguages.textContent = `${countryLanguagesLS[0].name}, ${countryLanguagesLS[1].name}, ${countryLanguagesLS[2].name}`;
-        };
     };
 };
 
