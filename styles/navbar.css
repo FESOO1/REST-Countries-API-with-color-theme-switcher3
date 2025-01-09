@@ -132,6 +132,26 @@
     color: black;
 }
 
+/* BODY JS - COUNTRY DATA */
+
+.body-js .main-go-back-itself {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.body-js .main-go-back-itself-svg {
+    fill: black;
+}
+
+.body-js .main-go-back-itself-text {
+    color: black;
+}
+
+.body-js .main-go-back-itself:hover {
+    background-color: rgb(253, 253, 253);
+}
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 650px) {
