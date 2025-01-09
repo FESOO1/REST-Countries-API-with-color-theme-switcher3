@@ -39,9 +39,9 @@ async function displayCountriesData() {
             localStorage.setItem('countrySubregionLS', countriesData[0].subregion);
             localStorage.setItem('countryCapitalLS', countriesData[0].capital);
             localStorage.setItem('countryTopLevelDomainLS', countriesData[0].topLevelDomain[0]);
-            localStorage.setItem('countryCurrenciesLS', countriesData[0].currencies[0].name);
-            localStorage.setItem('countryBorderCountriesLS', JSON.stringify(countriesData[0].borders));
+            localStorage.setItem('countryCurrenciesLS', countriesData[0].currencies[0].symbol);
             localStorage.setItem('countryLanguagesLS', JSON.stringify(countriesData[0].languages));
+            localStorage.setItem('countryBorderCountriesLS', JSON.stringify(countriesData[0].borders));
         });
     };
 };
