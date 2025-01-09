@@ -4,14 +4,16 @@ main {
     padding-top: 70px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
 /* MAIN TOP */
 
 .main-top {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
 }
 
@@ -23,6 +25,15 @@ main {
     background-color: hsl(209, 23%, 22%);
     border-radius: 0.2rem;
     border: 1px solid rgba(255,255,255,0.05);
+}
+
+.main-top-search-error {
+    display: none;
+    color: white;
+}
+
+.main-top-search-error-active {
+    display: flex;
 }
 
 .main-top-search label {
@@ -56,7 +67,9 @@ main {
 .countries-themselves {
     padding-inline: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    color: white;
 }
 
 /* COUNTRY ITSELF */
@@ -68,6 +81,16 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.country-itself-shown {
+    display: flex;
+}
+
+.country-itself-hidden {
+    display: none;
 }
 
 /* COUNTRY ITSELF IMAGE */
@@ -107,11 +130,13 @@ main {
 
 .country-itself-information-inner-text {
     color: white;
-    font-weight: 300;
+    font-weight: 700;
 }
 
-.country-itself-information-inner-text-bold {
-    font-weight: 700;
+.country-itself-information-inner-text-population,
+.country-itself-information-inner-text-region,
+.country-itself-information-inner-text-capital {
+    font-weight: 300;
 }
 
 /* COUNTRY ITSELF STATES */

@@ -1,0 +1,121 @@
+/* MAIN */
+
+main {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+/* MAIN GO BACK */
+
+.main-go-back {
+    padding: 40px;
+    display: flex;
+}
+
+.main-go-back-itself {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    text-decoration: none;
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.main-go-back-itself-svg {
+    width: 13px;
+    height: 13px;
+    fill: white;
+}
+
+.main-go-back-itself-text {
+    color: white;
+}
+
+.main-go-back-itself:hover {
+    background-color: hsl(208, 23%, 31%);
+}
+
+.main-go-back-itself:active {
+    background-color: hsl(207, 23%, 28%);
+}
+
+/* COUNTRY DATA */
+
+.country-data {
+    padding-inline: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* COUNTRY DATA LEFT */
+
+.country-data-left {
+    line-height: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: hsl(209, 23%, 22%);
+    padding: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.country-data-left-image {
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* COUNTRY DATA RIGHT */
+
+.country-data-right {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+/* COUNTRY DATA RIGHT */
+
+.country-data-right-name {
+    color: white;
+}
+
+/* COUNTRY DATA RIGHT GRID */
+
+.country-data-right-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+
+.country-data-right-grid-text {
+    color: white;
+}
+
+.country-data-right-grid-native-name,
+.country-data-right-grid-population,
+.country-data-right-grid-region,
+.country-data-right-grid-subregion,
+.country-data-right-grid-capital,
+.country-data-right-grid-top-level-domain,
+.country-data-right-grid-currencies,
+.country-data-right-grid-languages {
+    font-weight: 300;
+}
+
+/* COUNTRY DATA RIGHT BORDER COUNTRIES */
+
+.country-data-right-border-countries {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.country-data-right-border-countries-text {
+    color: white;
+}
